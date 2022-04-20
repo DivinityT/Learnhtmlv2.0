@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Learn HTML - JS 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/default.min.css" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../../images/html7.png">
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="bg">
+
+
+				<header id="header">
+					<a href="" class="logo">Learn html - js</a>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="../../index.html">Home</a></li>
+						<li class="active"><a href="../../classhub.html">Nos Cours</a></li>
+						<li><a href="../../about.html">À propos</a></li>
+						<li><a href="../../elements.html">dev</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Java Script</h1>
+									<h3>Déclarer des variables et modifier leurs valeurs</h3>
+								</header>
+                                <h3>Qu'est-ce qu'une variable ?</h3>
+                                <hr>
+                                <p>L'objectif d'un programme informatique est de faire quelque chose 
+                                    avec des données. Votre programme utilise des <strong>variables</strong> pour 
+                                    enregistrer et manipuler ces données. Plus précisément, une variable 
+                                    est un <strong>contenant</strong> utilisé pour enregistrer une donnée spécifique dont 
+                                    votre programme a besoin pour travailler. Un nom d'utilisateur, le nombre
+                                    de billets restants pour un vol, la disponibilité ou non d'un certain
+                                    produit en stock, toutes ces données sont enregistrées dans des variables.</p>
+
+                                    <div class="image main"><figure><img src="../images/js-depot.png" class="caption" alt="">
+										<figcaption>
+											Une variable est comme un entrepôt dans lequel on stocke des éléments
+                                    </figcaption></figure></div>
+
+								<p>Une donnée placée dans une variable s'appelle une <em><strong>valeur</strong></em>. Si on reprend l'analogie
+									 du "carton dans un entrepôt", des cartons différents peuvent enregistrer des valeurs
+									  différentes. Vous pouvez par exemple utiliser un carton pour stocker de l'argent pour 
+									  des dépenses courantes, et un autre pour des économies pour une occasion particulière,
+									   par exemple un voyage. Vous pouvez aussi vider les cartons ou modifier leur contenu, en 
+									   ajoutant par exemple de l'argent ou en en prélevant.</p>
+
+								<p>Pour savoir à quoi sert chaque carton, vous devez les étiqueter. En programmation, c'est la même
+									 chose : vous attribuez un <strong>nom</strong> à votre variable. Le nom d'une variable doit indiquer ce qui se 
+									 trouve  à l'intérieur, tout comme les étiquettes sur les cartons. Voici quelques règles générales
+									  pour la création de noms :</p>
+
+								<ul>
+									<li> <strong>utilisez des noms descriptifs dans l'ensemble de votre code.</strong><br>
+									<p>Avez-vous déjà eu à fouiller dans un ancien classeur, stocké dans un carton étiqueté 
+										"Administratif" sur la couverture ? Vous rappelez-vous à quel point c'était frustrant ?
+										 En étant descriptif et précis dans les noms de variables, la vie devient bien plus facile 
+										 : votre code devient plus facile à lire et à maintenir. Plutôt que   <code>quantity</code>  (ou encore pire,   <code>qty</code>  ),
+										  ajoutez des détails :   <code>quantityInStock</code>  ,   <code>currentAccountBalance</code>  , etc. ;</p> </li>
+									<li><strong>mettez les points sur les i.</strong><br>
+									<p>Évitez d'utiliser des abréviations ou de raccourcir des mots à chaque fois que c'est possible,
+										 même si une version plus courte semble évidente. Par exemple,   <code>annualRevenue</code>  sera mieux que   <code>annualRev</code>  ;</p></li>
+									<li><strong>suivez une convention de nommage constante.</strong><br>
+									<p>La convention de nommage la plus courante est <strong>camel case</strong>. Dans cette convention, les noms sont constitués de plusieurs mots dont l'initiale
+										 est en capitale. Par exemple   <code>numberOfCats</code>  ,   <code>finalAnswer</code>  ,   <code>howLongCanThisVariableNameGet</code>  , etc.</p></li>
+								</ul>
+
+								<p><pre><code class="language-js">class = "test"</code></pre></p>
+                            
+                                <!--Footer-->
+                                <hr/>
+                                <div class="centered align-center" id="bottom">
+                                    <a href="js-1.html#bottom" class="button primary">
+                                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>  Précédent</p>
+                                    </a>
+                                    <a href="js-3.html" class="button primary">
+                                        <p>Continuer <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+                                    </a>
+                                </div>
+								<br>
+								<div class="align-center">
+									<a href="js-sommaire.html" class="button primary-rounded">
+                                        <p><i class="fas fa-list"></i> Sommaire</p>
+                                    </a>
+								</div>
+                        </section>
+
+                            
+
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Learn HTML</li><li>Design: <a href="">Tristan & Jules</a></li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
