@@ -83,11 +83,12 @@
 
 			};
 
-			// Disable parallax on ..
+			/*// Disable parallax on ..
 				if (browser.name == 'ie'			// IE
 				||	browser.name == 'edge'			// Edge
 				||	window.devicePixelRatio > 1		// Retina/HiDPI (= poor performance)
-				||	browser.mobile)					// Mobile devices
+				||	browser.mobile	
+				||  browser.name == 'opera')			// Mobile devices
 					off();
 
 			// Enable everywhere else.
@@ -96,7 +97,10 @@
 					breakpoints.on('>large', on);
 					breakpoints.on('<=large', off);
 
-				}
+				}*/
+
+				// Disabled animation on all device
+				off();
 
 		});
 
