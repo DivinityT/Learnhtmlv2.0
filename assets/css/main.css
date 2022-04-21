@@ -5,6 +5,10 @@
 	opacity: 0.7;
 }
 
+p.question {
+	margin: 0;
+}
+
 i.quiz {
 	visibility: hidden;
 	width: 0px;
