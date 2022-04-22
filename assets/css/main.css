@@ -15,6 +15,12 @@ i.quiz {
 	height: 0px;
 }
 
+.quiz {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
 i.quiz-true {
 	color: green;
 }
