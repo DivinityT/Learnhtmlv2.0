@@ -78,8 +78,50 @@
 									<li><strong>suivez une convention de nommage constante.</strong><br>
 									<p>La convention de nommage la plus courante est <strong>camel case</strong>. Dans cette convention, les noms sont constitués de plusieurs mots dont l'initiale
 										 est en capitale. Par exemple   <code>numberOfCats</code>  ,   <code>finalAnswer</code>  ,   <code>howLongCanThisVariableNameGet</code>  , etc.</p></li>
-								</ul>
-                            
+								</ul><br>
+								<h3>Créez une variable en la déclarant</h3>
+								<hr>
+								<p>Pour utiliser une variable dans votre code, vous devez la créer. 
+									C'est ce qu'on appelle <em><strong>déclarer</strong></em> une <em>variable</em>.</p>
+								<p>En JavaScript, la déclaration d'une variable se limite au mot clé <em>const</em>, 
+									suivi du nom de variable choisi :</p>
+									<div class="image">
+										<img src="../images/js2_img.png" alt="">
+									</div>
+									<p>Ici, nous déclarons (créons) et initialisons (donnons une valeur à) deux variables :   <code>numberOfCats</code>  et   <code>numberOfDogs</code>  .</p>
+								<br>
+								<h3>Pratiquez la création de variables</h3>
+								<hr>
+								<div class="image main">
+									<img src="../images/js2_banner.png" alt="">
+								</div>
+								<p>Je vous propose un exercice permettant de créer et d'initialiser deux variables. 
+									Rendez-vous sur cet <a href="https://codepen.io/nicolaspatschkowski/pen/KKpRQWw" target="blank_">exercice CodePen</a>. Vous allez créer deux variables qui sont 
+									nécessaires pour le fonctionnement d'un composant créé par votre collègue. Ensemble,
+									 vous êtes en train de créer la page "Liste" des séries télé, et chaque série a besoin
+									  d'une variable pour son nombre de saisons, ainsi que pour le nombre d'épisodes par saison.</p>
+								<p>Votre collègue vous demande de nommer ces variables   <code>numberOfSeasons</code>  et   <code>numberOfEpisodes</code>  
+									pour qu'elles soient compatibles avec son code. Suivez les étapes suivantes :</p>
+									<ol>
+										<li>Créez une variable appelée   <code>numberOfSeasons</code>  et assignez-lui la valeur 6 entre les lignes créées pour vous dans l'éditeur JavaScript 
+											(l'onglet appelé "JS"). Pensez à utiliser le mot clé let, et n'oubliez pas le point-virgule en fin de ligne !</li>
+										<li>Ensuite, créez une variable appelée  <code>numberOfEpisodes</code>  et assignez-lui la valeur 12.</li>
+									</ol>
+									<div class="box alt">
+										<p>J'ai utilisé mon éditeur de code, dont l'interface est légèrement 
+											différente de la vôtre. Mais la démarche et la solution restent les mêmes
+											 ! J'utilise également des lignes de code additionnelles ("export", par exemple)
+											  mais ne vous en préoccupez pas, tout ce qu'il vous est nécessaire de <strong>modifier se 
+												trouve entre les "===".</strong></p>
+									</div>
+									<h4>Solution</h4>
+									<p>Vous avez terminé ? Voici <a href="https://codepen.io/nicolaspatschkowski/pen/dyorGbO" target="blank_">un nouveau CodePen avec une solution à l’exercice</a></p>
+									<div class="box alt2">
+										<p>Attention : dans beaucoup de démonstrations JavaScript, vous pourrez croiser le mot 
+											clé   <code>var</code>  plutôt que   <code>const</code>  . Bien qu'il y ait une différence subtile entre les deux 
+											(que nous détaillerons dans le chapitre sur la portée), pour l'instant vous pouvez 
+											simplement voir   <code>var</code>  comme l'ancienne version de   <code>const</code>  : c'est une autre façon de créer une variable.</p>
+									</div>
                                 <!--Footer-->
                                 <hr/>
                                 <div class="centered align-center" id="bottom">
@@ -117,6 +159,5 @@
 		<script src="../../assets/js/breakpoints.min.js"></script>
 		<script src="../../assets/js/util.js"></script>
 		<script src="../../assets/js/main.js"></script>
-
 	</body>
 </html>
