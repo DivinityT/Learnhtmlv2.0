@@ -1,8 +1,13 @@
+let numberOfLikes = 10;
+numberOfLikes++;  // cela fait 11
+numberOfLikes--; // et on revient à 10...qui n'a pas aimé mon article ?
+
+
 // simplification function
 function getEl(element){
     return document.getElementById(element)
 }
-// quiz1 : 
+// quiz1 : S
 
 // adding EventListenner
 var btn = getEl("v-qz1");
