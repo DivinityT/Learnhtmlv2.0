@@ -2,7 +2,6 @@
 function getEl(element){
     return document.getElementById(element)
 }
-// quiz1 :
 
 // adding EventListenner
 var btn = getEl("v-qz1");
@@ -38,9 +37,6 @@ function verify(answer) {
         false
     }
 }
-
-// qst1 variable
-var p_list_qst1 = ["qst1-p2", "qst1-p1", "qst1-p3", "qst1-p4"];
 
 function question_radio(list, answer) {
     if (verify(answer) == true) {
@@ -109,45 +105,6 @@ function verif_quiz_qst2(){
             }
     }
 }
-}
-
-// qst3 variable
-var p_list_qst3 = ["qst3-p2", "qst3-p1", "qst3-p3", "qst3-p4"];
-function verif_quiz_qst3(){
-    //qst3
-    if (getEl("qst3-p3").checked === true){
-        // disable buttons
-        for (let buttons of p_list_qst3.filter(function(f) { return f !== "qst3-p3"})){
-            getEl(buttons).disabled = true;
-        }
-
-        // disable content
-        for (let buttons of p_list_qst3.filter(function(f) { return f !== "qst3-p3"})){
-            getEl(buttons+"c").className += " disabled";
-        }
-
-        // green tick
-        getEl("qst3-p3icon").className = "quiz-true fa-solid fa-check"
-
-    }else{
-       for (let element of p_list_qst3){
-        if (getEl(element).checked === true){
-            // disable buttons
-            for (let buttons of p_list_qst3.filter(function(f) { return f !== element})){
-                getEl(buttons).disabled = true;
-            }
-
-            // disable content
-            for (let buttons of p_list_qst3.filter(function(f) { return f !== element})){
-                getEl(buttons+"c").className += " disabled";
-            }
-
-            // red cross
-            getEl(element + "icon").className = "quiz-false fa fa-xmark"
-            console.log(element+"test")
-        }
-    } 
-    }
 }
 
 // question 1
