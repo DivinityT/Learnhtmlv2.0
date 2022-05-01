@@ -1,59 +1,64 @@
-let numberOfLikes = 10;
-numberOfLikes++;  // cela fait 11
-numberOfLikes--; // et on revient à 10...qui n'a pas aimé mon article ?
-
-
 // simplification function
 function getEl(element){
     return document.getElementById(element)
 }
-// quiz1 : S
+// quiz1 :
 
 // adding EventListenner
 var btn = getEl("v-qz1");
 btn.addEventListener('click', verif_quiz1);
 
-// qst1 variable
+// adding red cross
+var iconfalse = "quiz-false fa fa-xmark";
+function false_answer(question){
+    getEl(question + "icon").className = iconfalse;
+}
+
+// adding green tick
 var icontrue = "quiz-true fa fa-check";
-var iconfalse = "quie-false fa fa-xmark";
+function true_answer(question) {
+    getEl(question + "icon").className = icontrue;
+}
+
+// disable buttons
+function disable_button(element) {
+        getEl(element).disabled = true;
+}
+
+// disable content
+function disable_content(element) {
+        getEl(element + "c").className += " disabled";
+}
+
+// verify answer
+function verify(answer) {
+    if (getEl(answer).checked == true) {
+        return true
+    }else {
+        false
+    }
+}
+
+// qst1 variable
 var p_list_qst1 = ["qst1-p2", "qst1-p1", "qst1-p3", "qst1-p4"];
 
-
-function verif_quiz_qst1() {
-    //qst1
-    if (getEl("qst1-p3").checked === true){
-        // disable buttons
-        for (let buttons of p_list_qst1.filter(function(f) { return f !== "qst1-p3"})){
-            getEl(buttons).disabled = true;
+function question_radio(list, answer) {
+    if (verify(answer) == true) {
+        true_answer(answer)
+        for (let button of list.filter(function(f) { return f !== answer})){
+            disable_content(button);
+            disable_button(button);
         }
-
-        // disable content
-        for (let buttons of p_list_qst1.filter(function(f) { return f !== "qst1-p3"})){
-            getEl(buttons+"c").className += "disabled";
-        }
-
-        // green tick
-        getEl("qst1-p3icon").className = "quiz-true fa-solid fa-check"
-    }
-
-    else{
-       for (let element of p_list_qst1){
-        if (getEl(element).checked === true){
-            // disable buttons
-            for (let buttons of p_list_qst1.filter(function(f) { return f !== element})){
-                getEl(buttons).disabled = true;
+    }else{
+        for (let question of list){
+            if (verify(question) == true){
+                false_answer(question);
+                for (let element of list.filter(function(f) { return f !== question})){
+                    disable_content(element)
+                    disable_button(element)
+                }
             }
-
-            // disable content
-            for (let buttons of p_list_qst1.filter(function(f) { return f !== element})){
-                getEl(buttons+"c").className += "disabled";
-            }
-
-            // red cross
-            getEl(element + "icon").className = "quiz-false fa fa-xmark"
-            console.log(element+"test")
         }
-    } 
     }
 }
 
@@ -145,8 +150,16 @@ function verif_quiz_qst3(){
     }
 }
 
+// question 1
+var qst1_list = ["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"];
+var qst1_answer = "qst1-p2"
+
+// question 3
+var qst3_list = ["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"];
+var qst3_answer = "qst3-p3"
+
 function verif_quiz1() {
-    verif_quiz_qst1();
+    question_radio(qst1_list, qst1_answer)
     verif_quiz_qst2();
-    verif_quiz_qst3();
-    }
+    question_radio(qst3_list, qst3_answer)
+}   
