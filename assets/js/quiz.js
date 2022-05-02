@@ -129,6 +129,7 @@ function blank_answers() {
     getEl("error:blank").className = "box alt2"
 }
 
+// when blank answer isn't blank no more 
 function blank_answer_fixed() {
     getEl("error:blank").className = "box alt2 hidden"
 }
