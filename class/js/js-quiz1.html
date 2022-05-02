@@ -45,27 +45,39 @@
                                 <i class="quiz" id="qst1-p2icon"></i><input type="radio" name="qst1" id="qst1-p2" class="qst1-p2radio"><code id="qst1-p2c" >let myVariable = 12;</code><br/>
                                 <i class="quiz" id="qst1-p3icon"></i><input type="radio" name="qst1" id="qst1-p3" class="qst1-p3radio"><code id="qst1-p3c" >const myVariable = 12;</code><br/><!-- good answer -->
                                 <i class="quiz" id="qst1-p4icon"></i><input type="radio" name="qst1" id="qst1-p4" class="qst1-p4radio"><code id="qst1-p4c" >let 12 = myVariable;</code>
+								<p id="subtext1" class="subtexthidden"> <strong>Réponse :</strong><br>La déclaration et l'initialisation de variables valables nécessite 
+									le mot-clé  <code>let</code>, le nom de la variable (en un seul mot), l'opérateur 
+									d'assignation  <code>=</code>, la valeur souhaitée pour la variable, et un 
+									point-virgule  <code>;</code>, dans cet ordre. </p>
                                 <hr>
 								<h3>Question N°2 :</h3>
-								<p><strong>Quelles propositions correspondent à des types primitifs en JavaScript ?</strong></p>
+								<p class="no-margin"><strong>Quelles propositions correspondent à des types primitifs en JavaScript ?</strong></p>
 								<p class="quiz" id="qst2-text"><em>Attention, plusieurs réponses sont attendue. certaines réponses entrées sont fausses, ou il vous en manque...</em></p>
-								<p id="qst2-p1c" class="question"><i class="quiz" id="qst2-p1icon"></i><input type="checkbox" id="qst2-p1">String</p>
-								<p id="qst2-p2c" class="question"><i class="quiz" id="qst2-p2icon"></i><input type="checkbox" id="qst2-p2">Array</p>
-								<p id="qst2-p3c" class="question"><i class="quiz" id="qst2-p3icon"></i><input type="checkbox" id="qst2-p3">Number</p>
-								<p id="qst2-p4c" class="question"><i class="quiz" id="qst2-p4icon"></i><input type="checkbox" id="qst2-p4">Boolean</p>
-								<p id="qst2-p5c" class="question"><i class="quiz" id="qst2-p5icon"></i><input type="checkbox" id="qst2-p5">Object</p>
-								<p id="qst2-p6c" class="question"><i class="quiz" id="qst2-p6icon"></i><input type="checkbox" id="qst2-p6">Class</p>
+								<p id="qst2-p1c" class="no-margin"><i class="quiz" id="qst2-p1icon"></i><input type="checkbox" id="qst2-p1">String</p>
+								<p id="qst2-p2c" class="no-margin"><i class="quiz" id="qst2-p2icon"></i><input type="checkbox" id="qst2-p2">Array</p>
+								<p id="qst2-p3c" class="no-margin"><i class="quiz" id="qst2-p3icon"></i><input type="checkbox" id="qst2-p3">Number</p>
+								<p id="qst2-p4c" class="no-margin"><i class="quiz" id="qst2-p4icon"></i><input type="checkbox" id="qst2-p4">Boolean</p>
+								<p id="qst2-p5c" class="no-margin"><i class="quiz" id="qst2-p5icon"></i><input type="checkbox" id="qst2-p5">Object</p>
+								<p id="qst2-p6c" class="no-margin"><i class="quiz" id="qst2-p6icon"></i><input type="checkbox" id="qst2-p6">Class</p>
+								<p id="subtext2" class="subtexthidden"> <strong>Réponse :</strong><br> Les trois types primitifs les plus courants en JavaScript
+									 sont string, number et boolean. Les objets (object) et tableaux (array) sont des types 
+									 complexes, et class n'est même pas un type !</p>
 								<hr>
                                 <h3>Question N°3 :</h3>
                                 <p><strong>Quelle est la valeur attendue de la variable numberOfCats à la fin de cet extrait de code ?</strong></p>
                                 <div class="image">
                                     <img src="../images/qst3_img.png" class="bigger" alt="">
                                 </div><br/>
-                                <p id="qst3-p1c" class="question"><i class="quiz" id="qst3-p1icon"></i><input type="radio" name="qst3" id="qst3-p1">4</p>
-                                <p id="qst3-p2c" class="question"><i class="quiz" id="qst3-p2icon"></i><input type="radio" name="qst3" id="qst3-p2">5</p>
-                                <p id="qst3-p3c" class="question"><i class="quiz" id="qst3-p3icon"></i><input type="radio" name="qst3" id="qst3-p3">6</p>
-                                <p id="qst3-p4c" class="question"><i class="quiz" id="qst3-p4icon"></i><input type="radio" name="qst3" id="qst3-p4">7</p>
-                                <br/><br/>
+                                <p id="qst3-p1c" class="no-margin"><i class="quiz" id="qst3-p1icon"></i><input type="radio" name="qst3" id="qst3-p1">4</p>
+                                <p id="qst3-p2c" class="no-margin"><i class="quiz" id="qst3-p2icon"></i><input type="radio" name="qst3" id="qst3-p2">5</p>
+                                <p id="qst3-p3c" class="no-margin"><i class="quiz" id="qst3-p3icon"></i><input type="radio" name="qst3" id="qst3-p3">6</p>
+                                <p id="qst3-p4c" class="no-margin"><i class="quiz" id="qst3-p4icon"></i><input type="radio" name="qst3" id="qst3-p4">7</p>
+								<p id="subtext3" class="subtexthidden"> <strong>Réponse :</strong><br>On initialise numberOfCats avec la valeur 10.
+									 Ensuite on y ajoute 5 (15), on divise par 3 (5), et on l'incrémente de 1 avec
+									 l'opérateur  <code>++</code>, ce qui donne une valeur finale de 6.</p>
+								<div id="error:blank" class="box alt2 hidden">
+									<p class="no-margin">Vous n'avez pas répondu à <strong>toutes les questions</strong> !</p>
+								</div>
                                 <input type="button" value="Vérification" class="button primary" id="v-qz1"><br>
 
                                 <!--Footer-->

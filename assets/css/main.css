@@ -1,6 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+.subtexthidden {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.subtext {
+	font-style: italic;
+}
+
 .title {
 	font-size: 1.25rem;
 }
@@ -9,8 +19,16 @@ div.box.alt p{
 	margin: 0.75rem;
 }
 
+div.box.alt p.no-margin {
+	margin: 0rem;
+}
+
 div.box.alt2 p{
 	margin: 0.75rem;
+}
+
+div.box.alt2 p.no-margin {
+	margin: 0rem;
 }
 
 .bigger {
@@ -22,7 +40,7 @@ div.box.alt2 p{
 	opacity: 0.7;
 }
 
-p.question {
+.no-margin {
 	margin: 0;
 }
 
@@ -48,6 +66,8 @@ i.quiz-false {
 
 .hidden {
 	visibility: hidden;
+	height: 0px;
+	width: 0px;
 }
 
 ul.sommaire a {
