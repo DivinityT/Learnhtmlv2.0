@@ -1,3 +1,7 @@
+// general var
+const questions_count = 3
+const all_answers = [["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"],["qst2-p2", "qst2-p5", "qst2-p6","qst2-p1",  "qst2-p3", "qst2-p4"],["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"]]
+
 // simplification function
 function getEl(element){
     return document.getElementById(element)
@@ -102,18 +106,23 @@ function multiple_choice(true_answers, false_answers) {
     }
 }
 
-// verify if quiz is answered
+///////////////////////////////////////////////////////////////////////////
+// check if question are not aswered and if so how many
+
+const blank_answers_id = "blank_answers_text_id"
+const blank_answers_text ="Il vous reste des question sans réponse ! ("
+const verif_btn_id = "v-qz1"
+
 function question_is_answered(list){
     if (list.some(id => getEl(id).checked == true)){
         return true
     }
 }
 
-function all_question_are_answered(list) {
+function all_question_are_answered() {
     let status = 0
-    for (let element of list){
+    for (let element of all_answers){
         if (question_is_answered(element)){
-            console.log("question: " + element + " answered")
             status++
         }
     }
@@ -124,20 +133,46 @@ function all_question_are_answered(list) {
     }
 }
 
-// error in case of blank answer on one question
-function blank_answers() {
-    getEl("error:blank").className = "box alt2"
+function count_blank_answers(){
+    let blank_answers_count = questions_count
+    for (let element of all_answers){
+        if (question_is_answered(element)){
+            blank_answers_count--
+        }
+    }
+    return blank_answers_count
 }
 
-// when blank answer isn't blank no more 
-function blank_answer_fixed() {
-    getEl("error:blank").className = "box alt2 hidden"
+function update_blank_answer_text(){
+    getEl(blank_answers_id).innerHTML = blank_answers_text + count_blank_answers(all_answers) + ")"
 }
 
-const all_answers = [["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"],["qst2-p2", "qst2-p5", "qst2-p6","qst2-p1",  "qst2-p3", "qst2-p4"],["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"]]
+function verif_btn(value){
+    if (value == "enable"){
+        getEl(verif_btn_id).disabled = false
+    }else {
+        getEl(verif_btn_id).disabled = true
+    }
+}
 
-// general var
-const questions_count = 3
+function decide_verif_possibility(){
+    console.log("verif possibility checked !")
+    if (all_question_are_answered()){
+        getEl("error:blank").className += " hidden"
+        verif_btn("enable")
+    }else {
+        update_blank_answer_text()
+        getEl("error:blank").className = "box alt2"
+        verif_btn()
+    }
+}
+decide_verif_possibility()
+
+// Event listener
+const body = document.body
+body.addEventListener('input', decide_verif_possibility)
+
+//////////////////////////////////////////////////////////////////////////
 
 // question 1
 var qst1_list = ["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"];
@@ -160,9 +195,7 @@ function verif_quiz1() {
         multiple_choice(qst2_true, qst2_false)
         question_radio(qst3_list, qst3_answer)
         subtext(subtexts)
-        blank_answer_fixed()
     }else {
-        blank_answers()
     }   
     
 }
