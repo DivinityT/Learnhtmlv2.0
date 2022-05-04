@@ -19,13 +19,13 @@ function subtext(list) {
 }
 
 // adding red cross
-var iconfalse = "quiz-false fa fa-xmark";
+const iconfalse = "quiz-false fa fa-xmark";
 function false_answer(question){
     getEl(question + "icon").className = iconfalse;
 }
 
 // adding green tick
-var icontrue = "quiz-true fa fa-check";
+const icontrue = "quiz-true fa fa-check";
 function true_answer(question) {
     getEl(question + "icon").className = icontrue;
 }
@@ -144,7 +144,7 @@ function count_blank_answers(){
 }
 
 function update_blank_answer_text(){
-    getEl(blank_answers_id).innerHTML = blank_answers_text + count_blank_answers(all_answers) + ")"
+    getEl(blank_answers_id).innerHTML = blank_answers_text + count_blank_answers() + ")"
 }
 
 function verif_btn(value){
