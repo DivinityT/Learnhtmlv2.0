@@ -1,6 +1,12 @@
 // general var
-const questions_count = 3
-const all_answers = [["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"],["qst2-p2", "qst2-p5", "qst2-p6","qst2-p1",  "qst2-p3", "qst2-p4"],["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"]]
+const questions_count = 5
+const all_answers = [
+    ["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"],
+    ["qst2-p2", "qst2-p5", "qst2-p6","qst2-p1",  "qst2-p3", "qst2-p4"],
+    ["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"],
+    ["qst4-p2", "qst4-p4", "qst4-p1", "qst4-p3"],
+    ["qst5-p1", "qst5-p2", "qst5-p3", "qst5-p4"]
+]
 
 // simplification function
 function getEl(element){
@@ -186,14 +192,24 @@ var qst2_true = ["qst2-p1",  "qst2-p3", "qst2-p4"];
 var qst3_list = ["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"];
 var qst3_answer = "qst3-p3"
 
+// question 4
+var qst4_false = ["qst4-p2", "qst4-p4"]
+var qst4_true = ["qst4-p1", "qst4-p3"]
+
+// question 5
+var qst5_list = ["qst5-p1", "qst5-p2", "qst5-p3", "qst5-p4"]
+var qst5_answer = "qst5-p1"
+
 // sub texts
-const subtexts = ["subtext1", "subtext2", "subtext3"]
+const subtexts = ["subtext1", "subtext2", "subtext3", "subtext4", "subtext5"]
 
 function verif_quiz1() {
     if (all_question_are_answered(all_answers)){
         question_radio(qst1_list, qst1_answer)
         multiple_choice(qst2_true, qst2_false)
         question_radio(qst3_list, qst3_answer)
+        multiple_choice(qst4_true, qst4_false)
+        question_radio(qst5_list, qst5_answer)
         subtext(subtexts)
     }else {
     }   
@@ -206,3 +222,15 @@ function verif_quiz1_dev() {
     question_radio(qst3_list, qst3_answer)
     subtext(subtexts)
 }
+
+// cheat
+function cheat(){
+    for (let element of all_answers){
+        for (let question of element){
+            getEl(question).checked = true
+        }
+    }
+    decide_verif_possibility()
+}
+
+getEl("cheat").addEventListener('click', cheat)
