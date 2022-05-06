@@ -88,6 +88,9 @@ function multiple_choice(true_answers, false_answers) {
         for (let element of false_answers){
             disable_content(element)
             disable_button(element)
+            if(getEl(element).checked == true){
+                false_answer(element)
+            }
         }
     }else{
         for (let element of true_answers){
