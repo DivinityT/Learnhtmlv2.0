@@ -2,3 +2,39 @@
     font-style: italic;
     color: #828282;
 }
+
+.box.altcode {
+    border: solid 2px;
+    font-size: smaller;
+    font-family: "Courier New", monospace, sans-serif;
+    background: #272822;
+    border-color: #272822;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.type {
+    color: #66D9EF;
+    font-style: italic;
+}
+
+.operator {
+    color: #FE4481;
+}
+
+.numeric {
+    color: #AE81FF;
+}
+
+.no {
+    color: #fff;
+}
+
+.line {
+    color: #8F908A;
+}
+
+.comment {
+    color: #918E7B;
+}
