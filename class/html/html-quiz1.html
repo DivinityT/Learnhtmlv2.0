@@ -40,20 +40,35 @@
                                     <hr/>
 								</header>
                                 <h3>Question N°1 :</h3>
-                                <p><strong>Parmi les propositions suivantes, laquelle correspond à une déclaration et une initialisation de variable ?</strong></p>
-                                <i class="quiz" id="qst1-p1icon"></i><input type="radio" name="qst1" id="qst1-p1" class="qst1-p1radio"><code id="qst1-p1c" >let my variable = 12;</code><br/><!--qst1= question 1, p1= proposition 1, c= contenu-->
-                                <i class="quiz" id="qst1-p2icon"></i><input type="radio" name="qst1" id="qst1-p2" class="qst1-p2radio"><code id="qst1-p2c" >let myVariable = 12;</code><br/>
-                                <i class="quiz" id="qst1-p3icon"></i><input type="radio" name="qst1" id="qst1-p3" class="qst1-p3radio"><code id="qst1-p3c" >variable myVariable = 12;</code><br/><!-- good answer -->
-                                <i class="quiz" id="qst1-p4icon"></i><input type="radio" name="qst1" id="qst1-p4" class="qst1-p4radio"><code id="qst1-p4c" >let 12 = myVariable;</code>
-								<p id="subtext1" class="subtexthidden"> <strong>Réponse :</strong><br>La déclaration et l'initialisation de variables valables nécessite 
-									le mot-clé  <code>let</code>, le nom de la variable (en un seul mot), l'opérateur 
-									d'assignation  <code>=</code>, la valeur souhaitée pour la variable, et un 
-									point-virgule  <code>;</code>, dans cet ordre. </p>
+                                <p><strong>Que doit-on écrire en CSS pour appliquer un style aux balises de titre de niveau 2 et 3 ?</strong></p>
+                                <p id="qst1-p1c" class="no-margin"><i class="quiz" id="qst1-p1icon"></i><input type="radio" name="qst1" id="qst1-p1">h2 + h3</p>
+                                <p id="qst1-p2c" class="no-margin"><i class="quiz" id="qst1-p2icon"></i><input type="radio" name="qst1" id="qst1-p2">h2 h3</p>
+                                <p id="qst1-p3c" class="no-margin"><i class="quiz" id="qst1-p3icon"></i><input type="radio" name="qst1" id="qst1-p3">.h2 .h3</p>
+                                <p id="qst1-p4c" class="no-margin"><i class="quiz" id="qst1-p4icon"></i><input type="radio" name="qst1" id="qst1-p4">h2, h3</p>
+								<p id="subtext1" class="subtexthidden"> <strong>Réponse :</strong><br> En css, si on souhaite appliquer une propriétée à 
+									plusieurs éléments, on sépare ces élément par une virgule.</p>
+                                <hr>
+								<h3>Question N°2 :</h3>
+                                <p><strong>Quelle est la particularité de l'attribut class par rapport à l'attribut id ?</strong></p>
+                                <p id="qst2-p1c" class="no-margin"><i class="quiz" id="qst2-p1icon"></i><input type="radio" name="qst2" id="qst2-p1">Il ne peut y avoir qu'un seul et même nom d'id par page, et plusieurs fois une même classe</p>
+                                <p id="qst2-p2c" class="no-margin"><i class="quiz" id="qst2-p2icon"></i><input type="radio" name="qst2" id="qst2-p2">class est utilisable dans les vieilles versions de HTML mais pas id</p>
+                                <p id="qst2-p3c" class="no-margin"><i class="quiz" id="qst2-p3icon"></i><input type="radio" name="qst2" id="qst2-p3">class peut être utilisé dans un fichier .css mais pas id</p>
+                                <p id="qst2-p4c" class="no-margin"><i class="quiz" id="qst2-p4icon"></i><input type="radio" name="qst2" id="qst2-p4">Il n'y a strictement aucune différence entre les deux</p>
+                                <hr>
+								<h3>Question N°3 :</h3>
+                                <p><strong>Peut-on utiliser n'importe quelle police sur son site web ?</strong></p>
+                                <p id="qst3-p1c" class="no-margin"><i class="quiz" id="qst3-p1icon"></i><input type="radio" name="qst3" id="qst3-p1">Oui, à condition d'utiliser @font-face</p>
+                                <p id="qst3-p2c" class="no-margin"><i class="quiz" id="qst3-p2icon"></i><input type="radio" name="qst3" id="qst3-p2">Oui, à condition d'utiliser une police hébergée par Google Web Fonts uniquement</p>
+                                <p id="qst3-p3c" class="no-margin"><i class="quiz" id="qst3-p3icon"></i><input type="radio" name="qst3" id="qst3-p3">Oui, mais le visiteur doit obligatoirement télécharger et installer manuellement la police</p>
+                                <p id="qst3-p4c" class="no-margin"><i class="quiz" id="qst3-p4icon"></i><input type="radio" name="qst3" id="qst3-p4">Non, ce n'est pas possible du tout</p>
                                 <hr>
 								<div id="error:blank" class="box alt2">
 									<p class="no-margin" id="blank_answers_text_id"></p>
 								</div>
-                                <input type="button" value="Vérification" class="button primary" id="v-qz1" disabled><br>
+                                <input type="button" value="Vérification" class="button primary" id="v-qz1" disabled>
+								<a class="button primary" id="cheat">
+									<p>cheat</p>
+								</a>
 
                                 <!--Footer-->
                                 <hr/>
@@ -92,7 +107,7 @@
 		<script src="../../assets/js/breakpoints.min.js"></script>
 		<script src="../../assets/js/util.js"></script>
 		<script src="../../assets/js/main.js"></script>
-        <script src="../../assets/js/quiz.js"></script>
+        <script src="../../assets/js/quiz-html.js"></script>
 
 	</body>
 </html>
