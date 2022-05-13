@@ -46,7 +46,8 @@ div.box.alt2 p.no-margin {
 }
 
 .no-margin {
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 i.quiz {
@@ -333,12 +334,16 @@ mark {
 		border: solid 2px;
 		border-radius: 10px;
 		font-family: "Courier New", monospace;
-		color: #e3e3e3;
 		background-color: #272822;
 		border-color: #272822;
+		color: #fff;
 		font-size: 0.9rem;
 		margin: 0 0.25rem;
 		padding: 0.25rem 0.65rem;
+	}
+
+	code span.no {
+		color: #fff;
 	}
 
 	pre {

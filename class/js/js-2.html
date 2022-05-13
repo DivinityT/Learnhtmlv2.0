@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/css-for-js.css">
 		<link rel="stylesheet" href="../../assets/css/default.min.css" />
 		<link rel="icon" type="image/png" sizes="16x16" href="../../images/html7.png">
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
@@ -138,28 +139,103 @@
 										des contextes mathématiques.</p>
 									<h5>Addition et soustraction</h5>
 									<p>Pour ajouter deux variables, utilisez le signe  <code>+</code>  :</p>
-									<div class="image">
-										<img src="../images/js2_img3.png" alt="">
+									<div id="code1" class="box altcode no-margin">
+										<span class="line">1</span>
+										<span class="type">let</span>
+										<span class="no"> totalCds</span>
+										<span class="operator"> =</span>
+										<span class="numeric">67</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">2</span>
+										<span class="type">let</span>
+										<span class="no"> totalVinyls</span>
+										<span class="operator"> =</span>
+										<span class="numeric">34</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">3</span>
+										<span class="type">let</span>
+										<span class="no"> totalCds</span>
+										<span class="operator"> =</span>
+										<span class="no"> totalCDs</span>
+										<span class="operator"> +</span>
+										<span class="no"> totalVinyls</span>
+										<span class="no">;</span>
 									</div>
-									<p>À l'inverse, la soustraction utilise le signe   <code>-</code>  :</p>
-									<div class="image">
-										<img src="../images/js2_img4.png" alt="">
+									<p class="no-margin">À l'inverse, la soustraction utilise le signe   <code>-</code>  :</p>
+									<div id="code2" class="box altcode no-margin">
+										<span class="line">1</span>
+										<span class="type">let</span>
+										<span class="no"> cookiesInJar</span>
+										<span class="operator"> =</span>
+										<span class="numeric">10</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">2</span>
+										<span class="type">let</span>
+										<span class="no"> cookiesRemoved</span>
+										<span class="operator"> =</span>
+										<span class="numeric">2</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">3</span>
+										<span class="type">let</span>
+										<span class="no"> cookiesLeftInJar</span>
+										<span class="operator"> =</span>
+										<span class="no"> cookiesInJar</span>
+										<span class="operator"> -</span>
+										<span class="no"> cookiesRemoved</span>
+										<span class="no">;</span>
 									</div>
-									<p>Pour ajouter ou soustraire un nombre d'une variable, vous pouvez utiliser
+									<p class="no-margin">Pour ajouter ou soustraire un nombre d'une variable, vous pouvez utiliser
 										 les opérateurs   <code>+=</code>  et   <code>-=</code>  :</p>
-									<div class="image">
-										<img src="../images/js2_img5.png" alt="">
-									</div>
-									<p>Enfin, vous pouvez utiliser   <code>++</code>  ou   <code>--</code>
+										 <div id="code3" class="box altcode no-margin">
+											<span class="line">1</span>
+											<span class="type">let</span>
+											<span class="no"> cookiesInJar</span>
+											<span class="operator"> =</span>
+											<span class="numeric">10</span>
+											<span class="no">;</span>
+											<br>
+											<span class="line">2</span>
+											<span class="comment">/* manger deux cookies */</span>
+											<br>
+											<span class="line">3</span>
+											<span class="no"> cookiesInJar</span>
+											<span class="operator"> -=</span>
+											<span class="numeric">2</span>
+											<span class="no">;</span>
+											<span class="comment">//il reste 8 cookies</span>
+											<br>
+											<span class="line">4</span>
+											<span class="comment">/* cuisson d'un nouveau lot de cookies */</span>
+											<br>
+											<span class="line">5</span>
+											<span class="type">let</span>
+											<span class="no"> cookiesLeftInJar</span>
+											<span class="operator"> =</span>
+											<span class="no"> cookiesInJar</span>
+											<span class="operator"> +</span>
+											<span class="no"> cookiesRemoved</span>
+											<span class="no">;</span>
+											<span class="comment">// il y a maintenant 20 cookies dans la boîte</span>
+										</div>
+									<p class="no-margin">Enfin, vous pouvez utiliser   <code>++</code>  ou   <code>--</code>
 										  pour ajouter ou soustraire 1 (incrément ou décrément) :</p>
-										<div class="image">
-											<img src="../images/js2_img6.png" alt="">
+										<div id="code3" class="box altcode no-margin">
+
 										</div>
 									<h5>Multiplication et division</h5>
-									<p>Les opérations de multiplication et de division utilisent les opérateurs   <code>*</code>  et   <code>/</code>  :
+									<p>Les opérations de multiplication et de division utilisent les opérateurs   <code>*</code>  et   <code>/</code>  :</p>
+									<div class="image">
+										<img src="../images/js2-img7.png" alt="">
+									</div>
 									<p>Comme pour l'addition et la soustraction, il existe aussi les opérateurs   <code>*=</code>  et   <code>/=</code>  pour multiplier ou diviser un nombre :</p>
-
-									</p>
+									<div class="image">
+										<img src="../images/js2-img8.png" alt="">
+									</div>
+									
                                 <!--Footer-->
                                 <hr/>
                                 <div class="centered align-center" id="bottom">
