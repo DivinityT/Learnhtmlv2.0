@@ -190,8 +190,8 @@ var qst2_list = ["qst2-p1", "qst2-p2", "qst2-p3", "qst2-p4"];
 var qst2_answer = "qst2-p1"
 
 // question 3
-var qst2_list = ["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"];
-var qst2_answer = "qst3-p1"
+var qst3_list = ["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"];
+var qst3_answer = "qst3-p1"
 
 
 
