@@ -1,9 +1,3 @@
-let costPerProduct = 20;
-let numberOfProducts = 5;
-let totalCost = costPerProduct * numberOfProducts;
-let averageCostPerProduct = totalCost / numberOfProducts;
-
-
 // general var
 const questions_count = 5
 const all_answers = [
