@@ -167,7 +167,7 @@ function verif_btn(value){
 function decide_verif_possibility(){
     console.log("verif possibility checked !")
     if (all_question_are_answered()){
-        getEl("error:blank").className += " hidden"
+        getEl("error:blank").className += " hiddenquiz"
         verif_btn("enable")
     }else {
         update_blank_answer_text()
