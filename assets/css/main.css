@@ -125,7 +125,7 @@ i.quiz-false {
 	color: red;
 }
 
-.hidden {
+.hiddenquiz {
 	visibility: hidden;
 	height: 0px;
 	width: 0px;
