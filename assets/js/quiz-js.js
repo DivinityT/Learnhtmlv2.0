@@ -2,7 +2,7 @@
 const questions_count = 5
 const all_answers = [
     ["qst1-p1", "qst1-p2", "qst1-p3", "qst1-p4"],
-    ["qst2-p2", "qst2-p5", "qst2-p6","qst2-p1",  "qst2-p3", "qst2-p4"],
+    ["qst2-p2", "qst2-p5", "qst2-p6","qst2-p1", "qst2-p3", "qst2-p4"],
     ["qst3-p1", "qst3-p2", "qst3-p3", "qst3-p4"],
     ["qst4-p2", "qst4-p4", "qst4-p1", "qst4-p3"],
     ["qst5-p1", "qst5-p2", "qst5-p3", "qst5-p4"]
