@@ -85,8 +85,20 @@
 									C'est ce qu'on appelle <em><strong>déclarer</strong></em> une <em>variable</em>.</p>
 								<p>En JavaScript, la déclaration d'une variable se limite au mot clé <em>const</em>, 
 									suivi du nom de variable choisi :</p>
-									<div class="image">
-										<img src="../images/js2_img.png" alt="">
+									<div id="code1" class="box altcode no-margin">
+										<span class="line">1</span>
+										<span class="type">const</span>
+										<span class="no"> numberOfCats</span>
+										<span class="operator"> =</span>
+										<span class="numeric">2</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">2</span>
+										<span class="type">const</span>
+										<span class="no"> numberOfDogs</span>
+										<span class="operator"> =</span>
+										<span class="numeric">4</span>
+										<span class="no">;</span>
 									</div>
 									<p>Ici, nous déclarons (créons) et initialisons (donnons une valeur à) deux variables :   <code>numberOfCats</code>  et   <code>numberOfDogs</code>  .</p>
 								<br>
@@ -125,9 +137,21 @@
 									<h3>Modifier la valeur d'une variable</h3>
 									<hr>
 									<p>La façon la plus simple de modifier la valeur d'une variable est simplement de la réaffecter :</p>
-									<div class="image">
-										<img src="../images/js2_img2.png" alt="">
+									<div id="code1" class="box altcode no-margin">
+										<span class="line">1</span>
+										<span class="type">let</span>
+										<span class="no"> numberOfCats</span>
+										<span class="operator"> =</span>
+										<span class="numeric">3</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">2</span>
+										<span class="no"> numberOfCats</span>
+										<span class="operator"> =</span>
+										<span class="numeric">4</span>
+										<span class="no">;</span>
 									</div>
+									<br>
 									<p>Ici, nous déclarons la variable   <code>numberOfCats</code>  et l'initialisons à la valeur 3.
 										 Nous lui réaffectons ensuite la valeur 4 (sans le mot clé   <code>let</code>  , parce que la variable a
 										  déjà été déclarée).</p>
@@ -138,8 +162,8 @@
 										la soustraction, la multiplication et la division. Toutes ces opérations peuvent être extrêmement utiles, même en dehors 
 										des contextes mathématiques.</p>
 									<h5>Addition et soustraction</h5>
-									<p>Pour ajouter deux variables, utilisez le signe  <code>+</code>  :</p>
-									<div id="code1" class="box altcode no-margin">
+									<p class="no-margin">Pour ajouter deux variables, utilisez le signe  <code>+</code>  :</p>
+										<div id="code1" class="box altcode no-margin">
 										<span class="line">1</span>
 										<span class="type">let</span>
 										<span class="no"> totalCds</span>
@@ -162,9 +186,10 @@
 										<span class="operator"> +</span>
 										<span class="no"> totalVinyls</span>
 										<span class="no">;</span>
-									</div>
+										</div>
+										<br>
 									<p class="no-margin">À l'inverse, la soustraction utilise le signe   <code>-</code>  :</p>
-									<div id="code2" class="box altcode no-margin">
+										<div id="code2" class="box altcode no-margin">
 										<span class="line">1</span>
 										<span class="type">let</span>
 										<span class="no"> cookiesInJar</span>
@@ -187,7 +212,8 @@
 										<span class="operator"> -</span>
 										<span class="no"> cookiesRemoved</span>
 										<span class="no">;</span>
-									</div>
+										</div>
+										<br>
 									<p class="no-margin">Pour ajouter ou soustraire un nombre d'une variable, vous pouvez utiliser
 										 les opérateurs   <code>+=</code>  et   <code>-=</code>  :</p>
 										 <div id="code3" class="box altcode no-margin">
@@ -221,22 +247,102 @@
 											<span class="no">;</span>
 											<span class="comment">// il y a maintenant 20 cookies dans la boîte</span>
 										</div>
+										<br>
 									<p class="no-margin">Enfin, vous pouvez utiliser   <code>++</code>  ou   <code>--</code>
 										  pour ajouter ou soustraire 1 (incrément ou décrément) :</p>
-										<div id="code3" class="box altcode no-margin">
-
+										  <div id="code4" class="box altcode no-margin">
+											<span class="line">1</span>
+											<span class="type">let</span>
+											<span class="no"> numberOfLikes</span>
+											<span class="operator"> =</span>
+											<span class="numeric"> 10</span>
+											<span class="no">;</span>
+											<br>
+											<span class="line">2</span>
+											<span class="no"> numberOfLikes</span>
+											<span class="operator"> ++</span>
+											<span class="no">;</span>
+											<span class="comment">// cela fait 11</span>
+											<br>
+											<span class="line">2</span>
+											<span class="no"> numberOfLikes</span>
+											<span class="operator"> --</span>
+											<span class="no">;</span>
+											<span class="comment">// on revient à 10</span>
 										</div>
+										<br>
 									<h5>Multiplication et division</h5>
-									<p>Les opérations de multiplication et de division utilisent les opérateurs   <code>*</code>  et   <code>/</code>  :</p>
-									<div class="image">
-										<img src="../images/js2-img7.png" alt="">
+									<p class="no-margin">Les opérations de multiplication et de division utilisent les opérateurs   <code>*</code>  et   <code>/</code>  :</p>
+										<div id="code5" class="box altcode no-margin">
+										<span class="line">1</span>
+										<span class="type">let</span>
+										<span class="no"> costPerProduct</span>
+										<span class="operator"> =</span>
+										<span class="numeric"> 20</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">2</span>
+										<span class="type">let</span>
+										<span class="no"> numberOfProducts</span>
+										<span class="operator"> =</span>
+										<span class="numeric">5</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">3</span>
+										<span class="type">let</span>
+										<span class="no"> totalCost</span>
+										<span class="operator"> =</span>
+										<span class="no">costPerProduct</span>
+										<span class="operator"> *</span>
+										<span class="no">numberOfProducts</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">4</span>
+										<span class="type">let</span>
+										<span class="no">averageCostPerProducts</span>
+										<span class="operator"> =</span>
+										<span class="no">totalCost</span>
+										<span class="operator"> /</span>
+										<span class="no">numberOfProducts</span>
+										<span class="no">;</span>
+										</div>
+										<br>
+									<p class="no-margin">Comme pour l'addition et la soustraction, il existe aussi les opérateurs   <code>*=</code>  et   <code>/=</code>  pour multiplier ou diviser un nombre :</p>
+									<div id="code6" class="box altcode no-margin">
+										<span class="line">1</span>
+										<span class="type">let</span>
+										<span class="no"> numberOfCats</span>
+										<span class="operator"> =</span>
+										<span class="numeric"> 2</span>
+										<span class="no">;</span>
+										<br>
+										<span class="line">2</span>
+										<span class="no"> numberOfCars	</span>
+										<span class="operator"> *=</span>
+										<span class="numeric">5</span>
+										<span class="no">;</span>
+										<span class="comment">// numberOfCats vaut maintenant 2*6 = 12</span>
+										<br>
+										<span class="line">3</span>
+										<span class="no"> numberOfCats</span>
+										<span class="operator"> /=</span>
+										<span class="numeric">3</span>
+										<span class="no">;</span>
+										<span class="comment">// numberOfCats vaut maintenant 12/3 = 4</span>
+										</div>
+										<br>
+									<h3>Pratiquez l'utilisation des opérateurs</h3>
+									<hr>
+									<div class="image main">
+										<img src="../images/js2_banner.png" alt="">
 									</div>
-									<p>Comme pour l'addition et la soustraction, il existe aussi les opérateurs   <code>*=</code>  et   <code>/=</code>  pour multiplier ou diviser un nombre :</p>
-									<div class="image">
-										<img src="../images/js2-img8.png" alt="">
-									</div>
-									
-                                <!--Footer-->
+									<p>Pour vous entrainez à créer des variables, rendez-vous sur cette <a href="https://codepen.io/nicolaspatschkowski/pen/BaNxgzN">exercice CodePen</a></p>
+									<p>Ajoutons maintenant un nouvel élément à notre composant de série : le temps total de visionnage d'une série (info essentielle pour les adeptes du binge-watching !).</p>
+									<ol>
+										<li><p>Dans l'éditeur JavaScript, créez deux variables,  <code>episodeTime</code>  et  <code>commercialTime</code>  ("temps de l'épisode" et "temps des pubs"), avec des valeurs appropriées (45 et 5, par exemple).</p></li>
+										<li><p>À l'aide des deux variables de temps que vous venez de créer, ainsi que du nombre d'épisodes et du nombre de saisons (variables préexistantes), créez une variable nommée  <code>totalShowTime</code>  qui contient le temps de visionnage total de cette série.</p></li>
+									</ol>
+									<!--Footer-->
                                 <hr/>
                                 <div class="centered align-center" id="bottom">
                                     <a href="js-1.html#bottom" class="button primary">
