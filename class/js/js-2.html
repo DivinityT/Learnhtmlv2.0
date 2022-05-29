@@ -53,14 +53,14 @@
 											Une variable est comme un entrepôt dans lequel on stocke des éléments
                                     </figcaption></figure></div>
 
-								<p>Une donnée placée dans une variable s'appelle une <em><strong>valeur</strong></em>. Si on reprend l'analogie
+								<p class="padding">Une donnée placée dans une variable s'appelle une <em><strong>valeur</strong></em>. Si on reprend l'analogie
 									 du "carton dans un entrepôt", des cartons différents peuvent enregistrer des valeurs
 									  différentes. Vous pouvez par exemple utiliser un carton pour stocker de l'argent pour 
 									  des dépenses courantes, et un autre pour des économies pour une occasion particulière,
 									   par exemple un voyage. Vous pouvez aussi vider les cartons ou modifier leur contenu, en 
 									   ajoutant par exemple de l'argent ou en en prélevant.</p>
 
-								<p>Pour savoir à quoi sert chaque carton, vous devez les étiqueter. En programmation, c'est la même
+								<p class="padding">Pour savoir à quoi sert chaque carton, vous devez les étiqueter. En programmation, c'est la même
 									 chose : vous attribuez un <strong>nom</strong> à votre variable. Le nom d'une variable doit indiquer ce qui se 
 									 trouve  à l'intérieur, tout comme les étiquettes sur les cartons. Voici quelques règles générales
 									  pour la création de noms :</p>
@@ -90,16 +90,16 @@
 										<span class="type">const</span>
 										<span class="no"> numberOfCats</span>
 										<span class="operator"> =</span>
-										<span class="numeric">2</span>
-										<span class="no">;</span>
+										<span class="numeric">2</span><span class="no">;</span>
 										<br>
 										<span class="line">2</span>
 										<span class="type">const</span>
 										<span class="no"> numberOfDogs</span>
 										<span class="operator"> =</span>
-										<span class="numeric">4</span>
-										<span class="no">;</span>
+										<span class="numeric">4</span><span class="no">;</span>
+										
 									</div>
+									<br>
 									<p>Ici, nous déclarons (créons) et initialisons (donnons une valeur à) deux variables :   <code>numberOfCats</code>  et   <code>numberOfDogs</code>  .</p>
 								<br>
 								<h3>Pratiquez la création de variables</h3>
@@ -107,12 +107,12 @@
 								<div class="image main">
 									<img src="../images/js2_banner.png" alt="">
 								</div>
-								<p>Je vous propose un exercice permettant de créer et d'initialiser deux variables. 
+								<p class="padding">Je vous propose un exercice permettant de créer et d'initialiser deux variables. 
 									Rendez-vous sur cet <a href="https://codepen.io/nicolaspatschkowski/pen/KKpRQWw" target="blank_">exercice CodePen</a>. Vous allez créer deux variables qui sont 
 									nécessaires pour le fonctionnement d'un composant créé par votre collègue. Ensemble,
 									 vous êtes en train de créer la page "Liste" des séries télé, et chaque série a besoin
 									  d'une variable pour son nombre de saisons, ainsi que pour le nombre d'épisodes par saison.</p>
-								<p>Votre collègue vous demande de nommer ces variables   <code>numberOfSeasons</code>  et   <code>numberOfEpisodes</code>  
+								<p class="padding">Votre collègue vous demande de nommer ces variables   <code>numberOfSeasons</code>  et   <code>numberOfEpisodes</code>  
 									pour qu'elles soient compatibles avec son code. Suivez les étapes suivantes :</p>
 									<ol>
 										<li>Créez une variable appelée   <code>numberOfSeasons</code>  et assignez-lui la valeur 6 entre les lignes créées pour vous dans l'éditeur JavaScript 
@@ -126,6 +126,7 @@
 											  mais ne vous en préoccupez pas, tout ce qu'il vous est nécessaire de <strong>modifier se 
 												trouve entre les "===".</strong></p>
 									</div>
+									<br>
 									<h4>Solution</h4>
 									<p>Vous avez terminé ? Voici <a href="https://codepen.io/nicolaspatschkowski/pen/dyorGbO" target="blank_">un nouveau CodePen avec une solution à l’exercice</a></p>
 									<div class="box alt2">
@@ -142,14 +143,12 @@
 										<span class="type">let</span>
 										<span class="no"> numberOfCats</span>
 										<span class="operator"> =</span>
-										<span class="numeric">3</span>
-										<span class="no">;</span>
+										<span class="numeric">3</span><span class="no">;</span>
 										<br>
 										<span class="line">2</span>
 										<span class="no"> numberOfCats</span>
 										<span class="operator"> =</span>
-										<span class="numeric">4</span>
-										<span class="no">;</span>
+										<span class="numeric">4</span><span class="no">;</span>
 									</div>
 									<br>
 									<p>Ici, nous déclarons la variable   <code>numberOfCats</code>  et l'initialisons à la valeur 3.
@@ -157,10 +156,12 @@
 										  déjà été déclarée).</p>
 									<p>Néanmoins, si c'était la seule façon de modifier une valeur de variable, 
 										vous ne pourriez pas en faire grand-chose. Voyons maintenant quelques <strong>opérateurs</strong>.</p>
+									<br>
 									<h4>Opérateurs arithmétiques – travail sur des nombres</h4>
 									<p>Les opérateurs arithmétiques vous permettent d'effectuer des opérations mathématiques de base telles que l'addition, 
 										la soustraction, la multiplication et la division. Toutes ces opérations peuvent être extrêmement utiles, même en dehors 
 										des contextes mathématiques.</p>
+									<br>
 									<h5>Addition et soustraction</h5>
 									<p class="no-margin">Pour ajouter deux variables, utilisez le signe  <code>+</code>  :</p>
 										<div id="code1" class="box altcode no-margin">
@@ -168,15 +169,13 @@
 										<span class="type">let</span>
 										<span class="no"> totalCds</span>
 										<span class="operator"> =</span>
-										<span class="numeric">67</span>
-										<span class="no">;</span>
+										<span class="numeric">67</span><span class="no">;</span>
 										<br>
 										<span class="line">2</span>
 										<span class="type">let</span>
 										<span class="no"> totalVinyls</span>
 										<span class="operator"> =</span>
-										<span class="numeric">34</span>
-										<span class="no">;</span>
+										<span class="numeric">34</span><span class="no">;</span>
 										<br>
 										<span class="line">3</span>
 										<span class="type">let</span>
@@ -184,8 +183,7 @@
 										<span class="operator"> =</span>
 										<span class="no"> totalCDs</span>
 										<span class="operator"> +</span>
-										<span class="no"> totalVinyls</span>
-										<span class="no">;</span>
+										<span class="no"> totalVinyls</span><span class="no">;</span>
 										</div>
 										<br>
 									<p class="no-margin">À l'inverse, la soustraction utilise le signe   <code>-</code>  :</p>
@@ -194,15 +192,13 @@
 										<span class="type">let</span>
 										<span class="no"> cookiesInJar</span>
 										<span class="operator"> =</span>
-										<span class="numeric">10</span>
-										<span class="no">;</span>
+										<span class="numeric">10</span><span class="no">;</span>
 										<br>
 										<span class="line">2</span>
 										<span class="type">let</span>
 										<span class="no"> cookiesRemoved</span>
 										<span class="operator"> =</span>
-										<span class="numeric">2</span>
-										<span class="no">;</span>
+										<span class="numeric">2</span><span class="no">;</span>
 										<br>
 										<span class="line">3</span>
 										<span class="type">let</span>
@@ -210,8 +206,7 @@
 										<span class="operator"> =</span>
 										<span class="no"> cookiesInJar</span>
 										<span class="operator"> -</span>
-										<span class="no"> cookiesRemoved</span>
-										<span class="no">;</span>
+										<span class="no"> cookiesRemoved</span><span class="no">;</span>
 										</div>
 										<br>
 									<p class="no-margin">Pour ajouter ou soustraire un nombre d'une variable, vous pouvez utiliser
@@ -221,8 +216,7 @@
 											<span class="type">let</span>
 											<span class="no"> cookiesInJar</span>
 											<span class="operator"> =</span>
-											<span class="numeric">10</span>
-											<span class="no">;</span>
+											<span class="numeric">10</span><span class="no">;</span>
 											<br>
 											<span class="line">2</span>
 											<span class="comment">/* manger deux cookies */</span>
@@ -230,8 +224,7 @@
 											<span class="line">3</span>
 											<span class="no"> cookiesInJar</span>
 											<span class="operator"> -=</span>
-											<span class="numeric">2</span>
-											<span class="no">;</span>
+											<span class="numeric">2</span><span class="no">;</span>
 											<span class="comment">//il reste 8 cookies</span>
 											<br>
 											<span class="line">4</span>
@@ -243,8 +236,7 @@
 											<span class="operator"> =</span>
 											<span class="no"> cookiesInJar</span>
 											<span class="operator"> +</span>
-											<span class="no"> cookiesRemoved</span>
-											<span class="no">;</span>
+											<span class="no"> cookiesRemoved</span><span class="no">;</span>
 											<span class="comment">// il y a maintenant 20 cookies dans la boîte</span>
 										</div>
 										<br>
@@ -255,19 +247,16 @@
 											<span class="type">let</span>
 											<span class="no"> numberOfLikes</span>
 											<span class="operator"> =</span>
-											<span class="numeric"> 10</span>
-											<span class="no">;</span>
+											<span class="numeric"> 10</span><span class="no">;</span>
 											<br>
 											<span class="line">2</span>
 											<span class="no"> numberOfLikes</span>
-											<span class="operator"> ++</span>
-											<span class="no">;</span>
+											<span class="operator"> ++</span><span class="no">;</span>
 											<span class="comment">// cela fait 11</span>
 											<br>
 											<span class="line">2</span>
 											<span class="no"> numberOfLikes</span>
-											<span class="operator"> --</span>
-											<span class="no">;</span>
+											<span class="operator"> --</span><span class="no">;</span>
 											<span class="comment">// on revient à 10</span>
 										</div>
 										<br>
@@ -278,15 +267,13 @@
 										<span class="type">let</span>
 										<span class="no"> costPerProduct</span>
 										<span class="operator"> =</span>
-										<span class="numeric"> 20</span>
-										<span class="no">;</span>
+										<span class="numeric"> 20</span><span class="no">;</span>
 										<br>
 										<span class="line">2</span>
 										<span class="type">let</span>
 										<span class="no"> numberOfProducts</span>
 										<span class="operator"> =</span>
-										<span class="numeric">5</span>
-										<span class="no">;</span>
+										<span class="numeric">5</span><span class="no">;</span>
 										<br>
 										<span class="line">3</span>
 										<span class="type">let</span>
@@ -294,8 +281,7 @@
 										<span class="operator"> =</span>
 										<span class="no">costPerProduct</span>
 										<span class="operator"> *</span>
-										<span class="no">numberOfProducts</span>
-										<span class="no">;</span>
+										<span class="no">numberOfProducts</span><span class="no">;</span>
 										<br>
 										<span class="line">4</span>
 										<span class="type">let</span>
@@ -303,8 +289,7 @@
 										<span class="operator"> =</span>
 										<span class="no">totalCost</span>
 										<span class="operator"> /</span>
-										<span class="no">numberOfProducts</span>
-										<span class="no">;</span>
+										<span class="no">numberOfProducts</span><span class="no">;</span>
 										</div>
 										<br>
 									<p class="no-margin">Comme pour l'addition et la soustraction, il existe aussi les opérateurs   <code>*=</code>  et   <code>/=</code>  pour multiplier ou diviser un nombre :</p>
@@ -313,21 +298,18 @@
 										<span class="type">let</span>
 										<span class="no"> numberOfCats</span>
 										<span class="operator"> =</span>
-										<span class="numeric"> 2</span>
-										<span class="no">;</span>
+										<span class="numeric"> 2</span><span class="no">;</span>
 										<br>
 										<span class="line">2</span>
 										<span class="no"> numberOfCars	</span>
 										<span class="operator"> *=</span>
-										<span class="numeric">5</span>
-										<span class="no">;</span>
+										<span class="numeric">5</span><span class="no">;</span>
 										<span class="comment">// numberOfCats vaut maintenant 2*6 = 12</span>
 										<br>
 										<span class="line">3</span>
 										<span class="no"> numberOfCats</span>
 										<span class="operator"> /=</span>
-										<span class="numeric">3</span>
-										<span class="no">;</span>
+										<span class="numeric">3</span><span class="no">;</span>
 										<span class="comment">// numberOfCats vaut maintenant 12/3 = 4</span>
 										</div>
 										<br>
